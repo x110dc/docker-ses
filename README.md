@@ -2,5 +2,5 @@
 
 ### Notes:
 - `/var/log` is exported as a VOLUME so you can view the postfix logs
-- uses `MANDRILL_USERNAME` and `MANDRILL_KEY` as environment variables
+- uses `SES_USERNAME` and `SES_API_KEY` as environment variables
 - see `Makefile`

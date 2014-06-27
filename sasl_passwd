@@ -1,1 +1,1 @@
-[smtp.mandrillapp.com] MANDRILL_USERNAME:MANDRILL_API_KEY
+email-smtp.us-east-1.amazonaws.com:25 SES_USERNAME:SES_API_KEY

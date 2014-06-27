@@ -1,8 +1,8 @@
 all:
-	docker build -t mandrill .
+	docker build -t ses .
 run:
-	docker run --detach=true --env-file=env --name mandrill --publish=25:25 mandrill
+	docker run --detach=true --env-file=env --name ses --publish=25:25 ses
 clean:
-	docker stop mandrill && docker rm mandrill
+	docker stop ses && docker rm ses
 debug:
-	docker run -i -t --volumes-from mandrill mandrill tail -f /var/log/mail.log
+	docker run -i -t --volumes-from ses ses tail -f /var/log/mail.log

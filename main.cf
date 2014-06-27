@@ -5,5 +5,8 @@ smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
 smtp_sasl_security_options = noanonymous
 # use STARTTLS for encryption
 smtp_use_tls = yes
-relayhost = [smtp.mandrillapp.com]
+relayhost = email-smtp.us-east-1.amazonaws.com:25
+smtp_tls_note_starttls_offer = yes
+smtp_tls_security_level = encrypt
+# who can send us mail?
 mynetworks = 0.0.0.0/0

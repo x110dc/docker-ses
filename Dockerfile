@@ -4,10 +4,8 @@ MAINTAINER tech@texastribune.org
 RUN apt-get update
 RUN apt-get install -y postfix supervisor libsasl2-modules syslog-ng-core
 
-# http://help.mandrill.com/entries/23060367-Can-I-configure-Postfix-to-send-through-Mandrill-
-
-ENV MANDRILL_USERNAME MANDRILL_USERNAME
-ENV MANDRILL_API_KEY MANDRILL_KEY
+ENV SES_USERNAME SES_USERNAME
+ENV SES_API_KEY SES_API_KEY
 
 # postfix
 ADD sasl_passwd /etc/postfix/
